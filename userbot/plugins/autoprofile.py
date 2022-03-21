@@ -38,7 +38,7 @@ from . import (
 )
 
 plugin_category = "tools"
-DEFAULTUSERBIO = DEFAULT_BIO or " ᗯᗩᏆᎢᏆᑎᏀ ᏞᏆᏦᗴ ᎢᏆᗰᗴ  "
+DEFAULTUSERBIO = DEFAULT_BIO or " ᴛʜᴇʏ ʟᴇᴀᴠᴇ ᴜ ɪғ ᴜ ᴀʀᴇ ɴᴏ ᴍᴏʀᴇ 𝗨𝗦𝗘𝗙𝗨𝗟 𝗧𝗢 𝗧𝗛𝗘𝗠  "
 DEFAULTUSER = AUTONAME or Config.ALIVE_NAME
 LOGS = logging.getLogger(__name__)
 
@@ -48,9 +48,9 @@ autopic_path = os.path.join(os.getcwd(), "userbot", "original_pic.png")
 digitalpic_path = os.path.join(os.getcwd(), "userbot", "digital_pic.png")
 autophoto_path = os.path.join(os.getcwd(), "userbot", "photo_pfp.png")
 
-digitalpfp = Config.DIGITAL_PIC or "https://telegra.ph/file/aeaebe33b1f3988a0b690.jpg"
-
-COLLECTION_STRINGS = {
+digitalpfp  =  پیکربندی _ DIGITAL_PIC  یا  "https://telegra.ph/file/aeaebe33b1f3988a0b690.jpg"
+را
+COLLECTION_STRINGS  = {
     "batmanpfp_strings": [
         "awesome-batman-wallpapers",
         "batman-arkham-knight-4k-wallpaper",
@@ -219,7 +219,7 @@ async def autoname_loop():
     while AUTONAMESTART:
         DM = time.strftime("%d-%m-%y")
         HM = time.strftime("%H:%M")
-        name = f"⌚️ {HM}||›  {DEFAULTUSER} ‹||📅 {DM}"
+        name = f"{DEFAULTUSER}|{HM}⌚️"
         LOGS.info(name)
         try:
             await catub(functions.account.UpdateProfileRequest(first_name=name))
